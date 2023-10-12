@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat&family=Source+Code+Pro&display=swap');
+
+#header {
+    background-color: white;
+    height: 60px;
+}
+
+.container {
+    margin: 0px auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    /* overflow: auto; */
+}
+
+.logo {
+    padding: 5px 10px;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.menu {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+    ;
+}
+
+.menu li a {
+    color: #2585DD;
+    display: block;
+    padding: 18px 20px;
+    text-decoration: none;
+}
+
+.menu ul.dropdown-menu {
+    position: absolute;
+    background-color: white;
+    /* margin: 20px 0; */
+    padding: 15px 0;
+    list-style: none;
+    width: 308px;
+    display: none;
+    z-index: 999;
+}
+
+.menu ul.dropdown-menu a {
+    padding: 10px 15px;
+}
+
+.menu li:hover ul.dropdown-menu {
+    display: block;
+}
+
+.menu ul.dropdown-menu li:hover {
+    background-color: #b0bec2;
+}
+
+.menu ul.dropdown-menu a {
+    padding: 8px 40px;
+}
+
+.menu>li>a {
+    position: relative;
+}
+
+.menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: #2585DD;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.menu>li:hover>a::before {
+    width: 100%;
+}
+
+.background {
+    background: url(../image/partnerbg.jpg);
+    width: 98vw;
+    height: 70vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero {
+    background-image: url(/image/partnerbglogo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 370px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: 300px;
+    left: 4%;
+    z-index: 1;
+    width: auto;
+    height: 460px;
+}
+
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 3%;
+    padding-left: 2%;
+}
+
+.hero-title .l1 {
+    color: #188ADC;
+}
+.hero-title .l2 {
+    color: #5CA4D8;
+}
+.hero-title .c1 {
+    color: #AFCADE;
+}
+
+.hero-title-2 {
+    font-family: 'JetBrains Mono', monospace;
+    max-width: 80%;
+    padding-left: 2%;
+}
+
+.shop-btn {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+h1.partner{
+    font-size: 2.63636363rem;
+    font-weight: 700;
+    line-height: 1.45;
+}
